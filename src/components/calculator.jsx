@@ -32,7 +32,7 @@ const Calculator = () => {
           <input type="text" value={result}/>
         </form>
           <div className='keypad'>
-            <button onClick={clear} id='clear'>  clear</button>
+            <button onClick={clear} className='clear'>  clear</button>
             <button onClick={backspace} id='backspace'>C</button>
             <button name='/'onClick={handleClick} >&divide;</button> 
             <button name='7' onClick={handleClick}>7</button>
@@ -47,13 +47,13 @@ const Calculator = () => {
             <button name='2'onClick={handleClick}>2</button>
             <button name='3'onClick={handleClick}>3</button>
             <button name='+'onClick={handleClick}>+</button>
-            <button name='0'onClick={handleClick}>0</button>
+            <button name='0'onClick={handleClick} className="zero">0</button>
             <button name='.'onClick={handleClick}>.</button>
             <button onClick={calculate} id='result'>=</button>
-
           </div>
+            
       </div>
-
+          
     </React.Fragment>
   )
 }
